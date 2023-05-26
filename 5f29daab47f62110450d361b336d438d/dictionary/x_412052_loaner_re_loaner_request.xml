@@ -1,3 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="073a92af47f62110450d361b336d4340" extends="task" label="Loaner Request" max_length="40" name="x_412052_loaner_re_loaner_request" type="collection"/>
+    <element db_object_id="073a92af47f62110450d361b336d4340" extends="task" label="Loaner Request" max_length="40" name="x_412052_loaner_re_loaner_request" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start date" mandatory="true" max_length="40" name="u_calendar_date_time_2" type="calendar_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="End date" mandatory="true" max_length="40" name="u_calendar_date_time_3" type="calendar_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="laptop" label="Item type" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Laptop" sequence="0" value="laptop"/>
+                <element inactive_on_update="false" label="Mobile Phone" sequence="1" value="mobile phone"/>
+                <element inactive_on_update="false" label="Projector" sequence="2" value="projector"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="ny" label="Depot" max_length="40" name="u_choice_5" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New York" sequence="0" value="ny"/>
+                <element inactive_on_update="false" label="London" sequence="1" value="london"/>
+                <element inactive_on_update="false" label="Buenos Aires" sequence="2" value="ba"/>
+                <element inactive_on_update="false" label="Santa Clara" sequence="3" value="sc"/>
+                <element inactive_on_update="false" label="Singapore" sequence="4" value="singapore"/>
+                <element inactive_on_update="false" label="Sydney" sequence="5" value="sydney"/>
+                <element inactive_on_update="false" label="Other" sequence="6" value="other"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Location to be Used" max_length="40" name="u_string_1" type="string"/>
+    </element>
 </database>
