@@ -17,14 +17,14 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>x_412052_loaner_re.loaner_request_user</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-05-20 13:11:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>318ada6f47f62110450d361b336d435a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Loaner Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Loaner Request" source="x_412052_loaner_re">5f29daab47f62110450d361b336d438d</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Loaner Request">5f29daab47f62110450d361b336d438d</sys_scope>
         <sys_update_name>sys_app_module_318ada6f47f62110450d361b336d435a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-21 04:59:34</sys_updated_on>
+        <sys_updated_on>2023-06-07 06:52:50</sys_updated_on>
         <timeline_page/>
         <title>Loaner Request</title>
         <uncancelable>false</uncancelable>
